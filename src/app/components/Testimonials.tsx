@@ -117,16 +117,24 @@ export function Testimonials() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-full relative z-0">
 
-            {/* Column 1 - Scrolls Up */}
+            {/* Column 1 - All items on Mobile, only Col 1 on Desktop */}
             <div className="flex flex-col relative h-full overflow-hidden">
               <div className="animate-scroll-up w-full">
-                {[...COL_1, ...COL_1, ...COL_1, ...COL_1].map((item, i) => (
-                  <TestimonialCard key={`col1-${i}`} item={item} />
-                ))}
+                {/* On mobile, show all mixed. On desktop, show only COL_1 */}
+                <div className="md:hidden">
+                  {[...COL_1, ...COL_2, ...COL_3, ...COL_1, ...COL_2, ...COL_3].map((item, i) => (
+                    <TestimonialCard key={`all-${i}`} item={item} />
+                  ))}
+                </div>
+                <div className="hidden md:block">
+                  {[...COL_1, ...COL_1, ...COL_1, ...COL_1].map((item, i) => (
+                    <TestimonialCard key={`col1-${i}`} item={item} />
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Column 2 - Scrolls Down */}
+            {/* Column 2 - Scrolls Down (Desktop Only) */}
             <div className="flex flex-col relative h-full overflow-hidden hidden md:flex">
               <div className="animate-scroll-down w-full">
                 {[...COL_2, ...COL_2, ...COL_2, ...COL_2].map((item, i) => (
@@ -135,7 +143,7 @@ export function Testimonials() {
               </div>
             </div>
 
-            {/* Column 3 - Scrolls Up */}
+            {/* Column 3 - Scrolls Up (Desktop Only) */}
             <div className="flex flex-col relative h-full overflow-hidden hidden md:flex">
               <div className="animate-scroll-up w-full" style={{ animationDelay: '-15s' }}>
                 {[...COL_3, ...COL_3, ...COL_3, ...COL_3].map((item, i) => (
