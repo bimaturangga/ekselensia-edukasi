@@ -88,29 +88,29 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16 relative z-10">
 
         {/* Left Side: Copy */}
-        <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start space-y-6 lg:space-y-8 z-10 text-center lg:text-left mt-8 lg:mt-0">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-rose-50 border border-rose-100 text-[#7c1318] text-sm font-semibold tracking-wide shadow-sm">
+        <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start space-y-6 lg:space-y-8 z-10 text-center lg:text-left pt-10 sm:pt-0">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-rose-50 border border-rose-100 text-[#7c1318] text-sm font-semibold tracking-wide shadow-sm mx-auto lg:mx-0">
             <Plane size={16} />
             Jalan Pintas Kuliah di Luar Negeri
           </div>
           <h1
-            className="text-[34px] leading-[1.15] sm:text-4xl md:text-5xl lg:text-6xl font-bold lg:leading-tight bg-clip-text text-transparent max-w-lg lg:max-w-none"
+            className="text-[36px] sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] lg:leading-tight bg-clip-text text-transparent w-full"
             style={{ backgroundImage: "linear-gradient(174.955deg, rgb(30, 30, 30) 11.53%, rgba(30, 30, 30, 0) 109.53%)" }}
           >
             Wujudkan Mimpi <br />
             Kuliah di <span className="text-[#7c1318]" style={{ WebkitTextFillColor: '#7c1318' }}>China</span>
           </h1>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg mb-4 lg:mb-6">
+          <p className="text-[15px] sm:text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-4 lg:mb-6 px-2 sm:px-0">
             Ekselensia membantu Anda mempersiapkan diri dan memastikan langkah sukses untuk menempuh pendidikan terbaik di universitas top Tiongkok.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto mt-2 lg:mt-0">
-            <RedButton as="a" href="https://wa.me/1234567890" className="w-full sm:w-auto flex justify-center !text-base sm:!text-[15px] !py-3.5 sm:!py-3">
+          <div className="flex flex-col w-full sm:flex-row gap-3 sm:gap-4 sm:w-auto mt-4 lg:mt-0 px-4 sm:px-0">
+            <RedButton as="a" href="https://wa.me/1234567890" className="w-full sm:w-auto flex justify-center items-center !text-[15px] !py-3.5 sm:!py-3">
               Mulai Konsultasi
               <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={18} />
             </RedButton>
             <a
               href="#program"
-              className="bg-white text-black border-2 border-gray-200 px-6 sm:px-8 py-3.5 sm:py-4 rounded-[10px] font-medium text-base sm:text-[18px] hover:border-gray-300 hover:bg-gray-50 transition-all flex items-center justify-center w-full sm:w-auto"
+              className="bg-white text-black border-2 border-gray-200 w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-[10px] font-medium text-[15px] sm:text-[18px] hover:border-gray-300 hover:bg-gray-50 transition-all flex items-center justify-center"
             >
               Lihat Program
             </a>

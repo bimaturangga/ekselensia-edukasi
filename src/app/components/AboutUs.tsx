@@ -11,21 +11,21 @@ export function AboutUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-stretch gap-16">
 
         {/* Left Side: Supporting Image */}
-        <div className="lg:w-1/2 w-full relative flex">
-          <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl h-full min-h-[300px] sm:min-h-[400px]">
+        <div className="lg:w-1/2 w-full relative block">
+          <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl h-[300px] sm:h-[400px] md:h-[500px]">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=1200"
               alt="Ekselensia Team"
               className="w-full h-full object-cover grayscale"
             />
             {/* Overlay Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-6 sm:p-10">
-              <div>
-                <RedButton className="pointer-events-none inline-flex !px-3 sm:!px-4 !py-1.5 sm:!py-2 !text-xs sm:!text-sm !rounded-xl mb-3 sm:mb-4 tracking-wider !w-auto">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-5 sm:p-10">
+              <div className="w-full">
+                <RedButton className="pointer-events-none inline-flex !px-3 sm:!px-4 !py-1.5 sm:!py-2 !text-[11px] sm:!text-sm !rounded-xl mb-2 sm:mb-4 tracking-wider !w-auto">
                   10+ Tahun Pengalaman
                 </RedButton>
                 <h3
-                  className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4 tracking-tight bg-clip-text text-transparent"
+                  className="text-[22px] leading-tight sm:text-3xl md:text-4xl font-extrabold mb-1 sm:mb-4 tracking-tight bg-clip-text text-transparent w-full"
                   style={{
                     fontFamily: 'Funnel Display, sans-serif',
                     backgroundImage: 'linear-gradient(174.955deg, rgb(255, 255, 255) 11.53%, rgba(255, 255, 255, 0.3) 109.53%)'
