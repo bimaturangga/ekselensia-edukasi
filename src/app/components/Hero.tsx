@@ -26,7 +26,7 @@ const STUDENTS = [
 
 export function Hero() {
   return (
-    <section id="beranda" className="relative bg-[#fafafa] pt-20 pb-12 overflow-hidden border-b border-gray-100 min-h-[80vh] flex items-center">
+    <section id="beranda" className="relative bg-[#fafafa] pt-28 lg:pt-20 pb-16 lg:pb-12 overflow-hidden border-b border-gray-100 min-h-[100vh] lg:min-h-[80vh] flex flex-col justify-center items-center">
 
       {/* Top radial gradient light source */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-[1400px] bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,1),transparent_80%)] pointer-events-none z-0"></div>
@@ -85,10 +85,10 @@ export function Hero() {
       {/* Bottom Gradient Fade */}
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#fafafa] to-transparent z-0 pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16 relative z-10">
+      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-16 relative z-10 w-full mt-4 lg:mt-0">
 
         {/* Left Side: Copy */}
-        <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start space-y-6 lg:space-y-8 z-10 text-center lg:text-left pt-10 sm:pt-0">
+        <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start space-y-6 lg:space-y-8 z-10 text-center lg:text-left pt-6 sm:pt-0 w-full">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-rose-50 border border-rose-100 text-[#7c1318] text-sm font-semibold tracking-wide shadow-sm mx-auto lg:mx-0">
             <Plane size={16} />
             Jalan Pintas Kuliah di Luar Negeri
@@ -97,13 +97,13 @@ export function Hero() {
             className="text-[36px] sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] lg:leading-tight bg-clip-text text-transparent w-full"
             style={{ backgroundImage: "linear-gradient(174.955deg, rgb(30, 30, 30) 11.53%, rgba(30, 30, 30, 0) 109.53%)" }}
           >
-            Wujudkan Mimpi <br />
+            Wujudkan Mimpi <br className="hidden sm:block lg:hidden" />
             Kuliah di <span className="text-[#7c1318]" style={{ WebkitTextFillColor: '#7c1318' }}>China</span>
           </h1>
-          <p className="text-[15px] sm:text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-4 lg:mb-6 px-2 sm:px-0">
+          <p className="text-[15px] sm:text-lg text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-4 lg:mb-6 px-1 lg:px-0 w-full">
             Ekselensia membantu Anda mempersiapkan diri dan memastikan langkah sukses untuk menempuh pendidikan terbaik di universitas top Tiongkok.
           </p>
-          <div className="flex flex-col w-full sm:flex-row gap-3 sm:gap-4 sm:w-auto mt-4 lg:mt-0 px-4 sm:px-0">
+          <div className="flex flex-col w-full sm:flex-row gap-3 sm:gap-4 sm:w-auto mt-4 lg:mt-0 px-2 sm:px-0">
             <RedButton as="a" href="https://wa.me/1234567890" className="w-full sm:w-auto flex justify-center items-center !text-[15px] !py-3.5 sm:!py-3">
               Mulai Konsultasi
               <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={18} />
@@ -118,32 +118,32 @@ export function Hero() {
         </div>
 
         {/* Right Side: Animated Carousel */}
-        <div className="lg:w-1/2 w-full relative h-[500px] overflow-hidden rounded-2xl bg-gray-50 flex items-center shadow-[inset_0_0_40px_rgba(0,0,0,0.02)]">
+        <div className="lg:w-1/2 w-full relative h-[320px] sm:h-[400px] lg:h-[500px] overflow-hidden rounded-2xl bg-gray-50 flex items-center shadow-[inset_0_0_40px_rgba(0,0,0,0.02)] mt-6 lg:mt-0">
 
-          <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
-          <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
+          <div className="absolute inset-y-0 left-0 w-8 sm:w-16 bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
+          <div className="absolute inset-y-0 right-0 w-8 sm:w-16 bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
 
-          <div className="flex items-center gap-6 pr-6 animate-marquee w-max">
+          <div className="flex items-center gap-4 lg:gap-6 pr-4 lg:pr-6 animate-marquee w-max">
             {[...STUDENTS, ...STUDENTS].map((student, i) => (
               <div
                 key={i}
-                className="w-72 flex-shrink-0 bg-white p-5 rounded-xl shadow-xl shadow-gray-200/50 flex flex-col gap-4 border border-gray-100"
+                className="w-[240px] lg:w-72 flex-shrink-0 bg-white p-4 lg:p-5 rounded-xl shadow-xl shadow-gray-200/50 flex flex-col gap-3 lg:gap-4 border border-gray-100"
               >
-                <div className="w-full h-64 rounded-lg overflow-hidden relative">
+                <div className="w-full h-[160px] lg:h-64 rounded-lg overflow-hidden relative">
                   <ImageWithFallback
                     src={student.image}
                     alt={student.name}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-bold text-black flex items-center gap-1.5">
-                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                  <div className="absolute bottom-2 lg:bottom-3 left-2 lg:left-3 bg-white/90 backdrop-blur-sm px-2 lg:px-3 py-1 lg:py-1.5 rounded-lg text-[10px] lg:text-xs font-bold text-black flex items-center gap-1.5">
+                    <div className="w-1.5 h-1.5 lg:w-2 lg:h-2 rounded-full bg-green-500"></div>
                     Diterima
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-black">{student.name}</h3>
-                  <p className="text-[#7c1318] font-medium text-sm mt-1">{student.major}</p>
-                  <p className="text-gray-500 text-sm mt-0.5">{student.uni}</p>
+                  <h3 className="text-[17px] lg:text-xl font-bold text-black">{student.name}</h3>
+                  <p className="text-[#7c1318] font-medium text-xs lg:text-sm mt-1">{student.major}</p>
+                  <p className="text-gray-500 text-[11px] lg:text-sm mt-0.5">{student.uni}</p>
                 </div>
               </div>
             ))}
