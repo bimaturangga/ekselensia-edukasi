@@ -147,8 +147,8 @@ export function KursusMandarin() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <RedButton as="a" href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
-                                Daftar Kelas Karir <ArrowRight size={18} />
+                            <RedButton as="a" href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="!px-5 sm:!px-6 !py-2.5 sm:!py-3 !text-[13px] sm:!text-[15px] !rounded-full">
+                                Daftar Kelas Karir <ArrowRight size={16} className="ml-1 sm:ml-2" />
                             </RedButton>
                         </div>
                     </div>
