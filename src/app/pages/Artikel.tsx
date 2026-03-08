@@ -25,7 +25,7 @@ export function Artikel() {
     return (
         <main className="pt-0 pb-16 min-h-screen bg-[#fafafa]">
             {/* Hero Section */}
-            <section className="relative w-full mb-12 flex flex-col items-center justify-center pt-32 pb-16 overflow-hidden border-b border-gray-100/50">
+            <section className="relative w-full mb-8 sm:mb-12 flex flex-col items-center justify-center pt-24 sm:pt-32 pb-8 sm:pb-16 overflow-hidden border-b border-gray-100/50">
                 {/* Grid Background */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@ export function Artikel() {
                         />
                     </div>
 
-                    <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto relative z-10">
+                    <p className="text-[15px] sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto relative z-10">
                         Dari panduan aplikasi hingga cerita kampus — temukan informasi terkini untuk mempersiapkan diri Anda menuju universitas terbaik.
                     </p>
                 </div>
@@ -78,7 +78,7 @@ export function Artikel() {
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Category Filter */}
                 <ScrollReveal>
-                    <div className="flex items-center justify-center sm:justify-start gap-3 mb-12 overflow-x-auto pb-4 scrollbar-hide">
+                    <div className="flex items-center justify-center sm:justify-start gap-3 mb-8 sm:mb-12 overflow-x-auto pb-4 scrollbar-hide">
                         {CATEGORIES.map((cat, i) => (
                             <button
                                 key={i}
@@ -168,7 +168,7 @@ export function Artikel() {
 
                 {/* Pagination / Load More */}
                 {filteredArticles.length > 0 && (
-                    <div className="mt-16 w-full flex justify-center">
+                    <div className="mt-10 sm:mt-16 w-full flex justify-center">
                         <ScrollReveal>
                             <RedButton
                                 className="!px-8 !py-3.5 !rounded-full shadow-lg hover:shadow-xl"

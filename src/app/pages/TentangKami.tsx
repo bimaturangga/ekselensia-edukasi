@@ -155,7 +155,7 @@ export function TentangKami() {
         <main className="pt-0 pb-16 min-h-screen">
 
             {/* Hero Section */}
-            <section className="relative w-full mb-32 pt-32 pb-12 overflow-hidden border-b border-gray-100/50">
+            <section className="relative w-full mb-16 sm:mb-32 pt-24 sm:pt-32 pb-8 sm:pb-12 overflow-hidden border-b border-gray-100/50">
                 {/* Grid Background */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +184,7 @@ export function TentangKami() {
                 <div className="relative px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#7c1318]/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
 
-                    <div className="text-center mb-16 relative z-10">
+                    <div className="text-center mb-10 sm:mb-16 relative z-10">
                         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/80 backdrop-blur-sm text-[#7c1318] text-xs font-semibold mb-6 border border-[#7c1318]/10 tracking-wide uppercase shadow-sm">
                             <Info size={14} />
                             Tentang Perusahaan
@@ -205,7 +205,7 @@ export function TentangKami() {
                             />
                         </div>
 
-                        <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mb-10 relative z-10">
+                        <p className="text-[15px] sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10 relative z-10">
                             Kami adalah konsultan pendidikan terdepan yang berdedikasi membimbing dan mendampingi putra-putri Indonesia meraih pendidikan berkualitas global di Tiongkok.
                         </p>
                     </div>
@@ -240,9 +240,9 @@ export function TentangKami() {
             </section>
 
             {/* Visi, Misi & Legalitas Section */}
-            <section className="bg-white py-24 border-y border-gray-100 mb-24 relative overflow-hidden">
+            <section className="bg-white py-16 sm:py-24 border-y border-gray-100 mb-16 sm:mb-24 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-10 sm:mb-16">
                         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#f5f5f5] border border-gray-200 text-gray-600 text-xs font-medium mb-6">
                             <ShieldCheck size={14} />
                             Fondasi & Legalitas
@@ -293,8 +293,8 @@ export function TentangKami() {
             </section>
 
             {/* Tim Pengajar & Konsultan */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
-                <div className="text-center mb-16">
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 sm:mb-24">
+                <div className="text-center mb-10 sm:mb-16">
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#f5f5f5] border border-gray-200 text-gray-600 text-xs font-medium mb-6">
                         <Users size={14} />
                         Tim Kami

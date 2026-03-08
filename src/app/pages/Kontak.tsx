@@ -9,7 +9,7 @@ export function Kontak() {
         <main className="pt-0 pb-16 min-h-screen bg-[#fafafa]">
 
             {/* Hero Section */}
-            <section className="relative w-full mb-16 pt-32 pb-12 overflow-hidden border-b border-gray-100/50">
+            <section className="relative w-full mb-8 sm:mb-16 pt-24 sm:pt-32 pb-8 sm:pb-12 overflow-hidden border-b border-gray-100/50">
                 {/* Grid Background */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@ export function Kontak() {
                             />
                         </div>
 
-                        <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mb-10 relative z-10">
+                        <p className="text-[15px] sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-10 relative z-10">
                             Tim konsultan kami siap membantu menjawab pertanyaan Anda dan merencanakan strategi terbaik untuk studi di Tiongkok.
                         </p>
                     </div>
@@ -65,7 +65,7 @@ export function Kontak() {
             </section>
 
             {/* Contact Content Section */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-24">
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-16 sm:mb-24">
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 items-stretch">
 
                     {/* Left Column: Contact Info */}

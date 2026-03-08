@@ -102,7 +102,7 @@ export function TurKampus() {
         <main className="pt-0 pb-16 min-h-screen">
 
             {/* Hero Section */}
-            <section className="relative w-full mb-32 pt-32 pb-12 overflow-hidden border-b border-gray-100/50">
+            <section className="relative w-full mb-16 sm:mb-32 pt-24 sm:pt-32 pb-8 sm:pb-12 overflow-hidden border-b border-gray-100/50">
                 {/* Dotted Grid Background */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +142,7 @@ export function TurKampus() {
                             />
                         </div>
 
-                        <p className="text-lg text-gray-600 leading-relaxed max-w-lg mx-auto mb-10">
+                        <p className="text-[15px] sm:text-lg text-gray-600 leading-relaxed max-w-lg mx-auto mb-8 sm:mb-10">
                             Eksplorasi universitas ternama dan alami langsung atmosfer pendidikan beserta budaya di Tiongkok secara langsung untuk pelajar tingkat SMA.
                         </p>
 
@@ -185,10 +185,10 @@ export function TurKampus() {
             </section>
 
             {/* Keunggulan Program Section */}
-            <section id="keunggulan" className="bg-[#121212] py-24 mx-5 rounded-[20px] mb-24 relative overflow-hidden text-white border border-white/5 shadow-2xl">
+            <section id="keunggulan" className="bg-[#121212] py-16 sm:py-24 mx-3 sm:mx-5 rounded-[16px] sm:rounded-[20px] mb-16 sm:mb-24 relative overflow-hidden text-white border border-white/5 shadow-2xl">
                 <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#7c1318]/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-10 sm:mb-16">
                         <BlurRevealText
                             text="Keunggulan Study Tour Ekselensia"
                             as="h2"
@@ -243,8 +243,8 @@ export function TurKampus() {
             </section>
 
             {/* Tahapan Sekilas */}
-            <section className="max-w-4xl mx-auto px-4 sm:px-6 mb-24">
-                <div className="text-center mb-16 flex flex-col items-center">
+            <section className="max-w-4xl mx-auto px-4 sm:px-6 mb-16 sm:mb-24">
+                <div className="text-center mb-10 sm:mb-16 flex flex-col items-center">
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#f5f5f5] border border-gray-200 text-gray-600 text-xs font-medium mb-6">
                         <BookOpen size={14} />
                         Tahapan Bimbingan
