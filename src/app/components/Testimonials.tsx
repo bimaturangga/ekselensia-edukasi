@@ -109,7 +109,7 @@ export function Testimonials() {
         </div>
 
         {/* Masonry / Carousel Container */}
-        <div className="relative w-full h-[450px] sm:h-[600px] overflow-hidden -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div className="relative w-full h-[450px] sm:h-[600px] overflow-hidden">
 
           {/* Top/Bottom Gradient Fades */}
           <div className="absolute top-0 left-0 right-0 h-24 sm:h-32 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none"></div>
