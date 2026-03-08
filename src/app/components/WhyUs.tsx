@@ -5,25 +5,25 @@ import { RedButton } from './ui/RedButton';
 import { BlurRevealText } from './ui/BlurRevealText';
 
 const SubHeader = ({ tag, title, desc, icon: Icon }: any) => (
-  <div className="max-w-3xl mb-8">
-    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#252525] border border-white/10 text-gray-300 text-xs font-medium mb-6">
+  <div className="max-w-3xl mb-6 sm:mb-8">
+    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#252525] border border-white/10 text-gray-300 text-[11px] sm:text-xs font-medium mb-4 sm:mb-6">
       <Icon size={14} />
       {tag}
     </div>
     <BlurRevealText
       text={title}
       as="h2"
-      className="text-3xl md:text-4xl font-bold mb-4 tracking-tight bg-clip-text text-transparent"
+      className="text-[28px] leading-tight sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 tracking-tight bg-clip-text text-transparent"
       style={{
         fontFamily: 'Funnel Display, sans-serif',
         backgroundImage: 'linear-gradient(174.955deg, rgb(255, 255, 255) 11.53%, rgba(255, 255, 255, 0.3) 109.53%)'
       }}
     />
-    <p className="text-gray-400 text-lg leading-relaxed mb-6">
+    <p className="text-gray-400 text-[14px] sm:text-lg leading-relaxed mb-5 sm:mb-6">
       {desc}
     </p>
-    <RedButton className="!px-6 !py-3 !text-[15px] !rounded-full">
-      Pelajari Lebih Lanjut <ArrowRight size={16} />
+    <RedButton className="!px-5 sm:!px-6 !py-2.5 sm:!py-3 !text-[13px] sm:!text-[15px] !rounded-full">
+      Pelajari Lebih Lanjut <ArrowRight size={16} className="ml-1 sm:ml-2" />
     </RedButton>
   </div>
 );
@@ -215,16 +215,16 @@ const CommunityMockup = () => (
 
 export function WhyUs() {
   return (
-    <section id="why-us" className="bg-[#121212] py-24 sm:py-32 text-white relative overflow-hidden mx-5 rounded-[20px] my-24 border border-white/5 shadow-2xl">
+    <section id="why-us" className="bg-[#121212] py-16 sm:py-32 text-white relative overflow-hidden mx-3 sm:mx-5 rounded-[16px] sm:rounded-[20px] my-16 sm:my-24 border border-white/5 shadow-2xl">
       {/* Abstract Background Elements */}
       <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-[#7c1318]/[0.02] rounded-full blur-3xl -translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Sub-section 1 */}
-        <div className="relative pl-8 md:pl-16 pb-24 sm:pb-32">
-          <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center w-8">
-            <div className="w-8 h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-xs font-bold leading-none shrink-0 ring-4 ring-[#121212] -mt-0.5">
+        <div className="relative pl-6 sm:pl-8 md:pl-16 pb-16 sm:pb-32">
+          <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center w-6 sm:w-8">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-[10px] sm:text-xs font-bold leading-none shrink-0 ring-2 sm:ring-4 ring-[#121212] -mt-0.5">
               01
             </div>
             <div className="w-px flex-1 bg-gray-700/50 my-2"></div>
@@ -237,50 +237,50 @@ export function WhyUs() {
               desc="Daftar ke universitas top Tiongkok tanpa pusing memikirkan birokrasi. Kami mengotomatisasi pengurusan dokumen dan persyaratan rumit menjadi sangat sederhana."
               icon={Settings}
             />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-[#1C1C1C] border border-white/5 rounded-[20px] p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 group">
-                <div className="flex-1 w-full flex items-center justify-center min-h-[220px] mb-8 relative">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+              <div className="bg-[#1C1C1C] border border-white/5 rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 group overflow-hidden">
+                <div className="flex-1 w-full flex items-center justify-center min-h-[160px] sm:min-h-[220px] mb-6 sm:mb-8 relative transform scale-90 sm:scale-100">
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1C1C1C] z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
                   <SelectionMockup />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-3">Pemilihan Universitas Tepat</h4>
-                <p className="text-sm text-gray-400 max-w-sm leading-relaxed">Menganalisis minat dan latar belakang untuk mencocokkan Anda dengan universitas dan jurusan paling ideal.</p>
+                <h4 className="text-[17px] sm:text-xl font-bold text-white mb-2 sm:mb-3">Pemilihan Universitas Tepat</h4>
+                <p className="text-[13px] sm:text-sm text-gray-400 max-w-sm leading-relaxed">Menganalisis minat dan latar belakang untuk mencocokkan Anda dengan universitas dan jurusan paling ideal.</p>
               </div>
 
-              <div className="bg-[#1C1C1C] border border-white/5 rounded-[20px] p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 group">
-                <div className="flex-1 w-full flex items-center justify-center min-h-[220px] mb-8 relative">
+              <div className="bg-[#1C1C1C] border border-white/5 rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 group overflow-hidden">
+                <div className="flex-1 w-full flex items-center justify-center min-h-[160px] sm:min-h-[220px] mb-6 sm:mb-8 relative transform scale-90 sm:scale-100">
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1C1C1C] z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
                   <DocumentMockup />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-3">Manajemen Dokumen</h4>
-                <p className="text-sm text-gray-400 max-w-sm leading-relaxed">Sistem kami memastikan seluruh dokumen diterjemahkan, dilegalisir, dan disusun sesuai standar kampus tujuan.</p>
+                <h4 className="text-[17px] sm:text-xl font-bold text-white mb-2 sm:mb-3">Manajemen Dokumen</h4>
+                <p className="text-[13px] sm:text-sm text-gray-400 max-w-sm leading-relaxed">Sistem kami memastikan seluruh dokumen diterjemahkan, dilegalisir, dan disusun sesuai standar kampus tujuan.</p>
               </div>
 
-              <div className="bg-[#1C1C1C] border border-white/5 rounded-[20px] p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 group">
-                <div className="flex-1 w-full flex items-center justify-center min-h-[220px] mb-8 relative">
+              <div className="bg-[#1C1C1C] border border-white/5 rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 group overflow-hidden">
+                <div className="flex-1 w-full flex items-center justify-center min-h-[160px] sm:min-h-[220px] mb-6 sm:mb-8 relative transform scale-90 sm:scale-100">
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1C1C1C] z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
                   <TrackingMockup />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-3">Pelacakan Real-time</h4>
-                <p className="text-sm text-gray-400 max-w-sm leading-relaxed">Pantau status aplikasi, pengiriman dokumen, hingga hasil interview dari satu dasbor yang transparan.</p>
+                <h4 className="text-[17px] sm:text-xl font-bold text-white mb-2 sm:mb-3">Pelacakan Real-time</h4>
+                <p className="text-[13px] sm:text-sm text-gray-400 max-w-sm leading-relaxed">Pantau status aplikasi, pengiriman dokumen, hingga hasil interview dari satu dasbor yang transparan.</p>
               </div>
 
-              <div className="bg-[#1C1C1C] border border-white/5 rounded-[20px] p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 group">
-                <div className="flex-1 w-full flex items-center justify-center min-h-[220px] mb-8 relative">
+              <div className="bg-[#1C1C1C] border border-white/5 rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 group overflow-hidden">
+                <div className="flex-1 w-full flex items-center justify-center min-h-[160px] sm:min-h-[220px] mb-6 sm:mb-8 relative transform scale-90 sm:scale-100">
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1C1C1C] z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
                   <ScholarshipMockup />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-3">Bimbingan Beasiswa</h4>
-                <p className="text-sm text-gray-400 max-w-sm leading-relaxed">Kami membantu menyusun strategi aplikasi beasiswa pemerintah (CGS) maupun beasiswa internal universitas.</p>
+                <h4 className="text-[17px] sm:text-xl font-bold text-white mb-2 sm:mb-3">Bimbingan Beasiswa</h4>
+                <p className="text-[13px] sm:text-sm text-gray-400 max-w-sm leading-relaxed">Kami membantu menyusun strategi aplikasi beasiswa pemerintah (CGS) maupun beasiswa internal universitas.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Sub-section 2 */}
-        <div className="relative pl-8 md:pl-16 pb-24 sm:pb-32">
-          <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center w-8">
-            <div className="w-8 h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-xs font-bold leading-none shrink-0 ring-4 ring-[#121212] -mt-0.5">
+        <div className="relative pl-6 sm:pl-8 md:pl-16 pb-16 sm:pb-32">
+          <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center w-6 sm:w-8">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-[10px] sm:text-xs font-bold leading-none shrink-0 ring-2 sm:ring-4 ring-[#121212] -mt-0.5">
               02
             </div>
             <div className="w-px flex-1 bg-gray-700/50 my-2"></div>
@@ -294,38 +294,38 @@ export function WhyUs() {
               desc="Layanan kami tidak berhenti di surat penerimaan. Kami memastikan Anda siap menghadapi sistem perkuliahan di Tiongkok dengan bekal yang cukup."
               icon={BookOpen}
             />
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <div className="bg-[#1C1C1C] border border-white/5 rounded-[20px] p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10">
-                <div className="flex-1 w-full flex items-center justify-center min-h-[180px] mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
+              <div className="bg-[#1C1C1C] border border-white/5 rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 overflow-hidden">
+                <div className="flex-1 w-full flex items-center justify-center min-h-[140px] sm:min-h-[180px] mb-6 sm:mb-8 transform scale-90 sm:scale-100">
                   <CourseMockup />
                 </div>
-                <h4 className="text-lg font-bold text-white mb-3">Kursus Bahasa Mandarin</h4>
-                <p className="text-sm text-gray-400 leading-relaxed">Persiapan intensif HSK dan bahasa percakapan sehari-hari sebelum keberangkatan.</p>
+                <h4 className="text-[17px] sm:text-lg font-bold text-white mb-2 sm:mb-3">Kursus Bahasa Mandarin</h4>
+                <p className="text-[13px] sm:text-sm text-gray-400 leading-relaxed">Persiapan intensif HSK dan bahasa percakapan sehari-hari sebelum keberangkatan.</p>
               </div>
 
-              <div className="bg-[#1C1C1C] border border-white/5 rounded-[20px] p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10">
-                <div className="flex-1 w-full flex items-center justify-center min-h-[180px] mb-8">
+              <div className="bg-[#1C1C1C] border border-white/5 rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 overflow-hidden">
+                <div className="flex-1 w-full flex items-center justify-center min-h-[140px] sm:min-h-[180px] mb-6 sm:mb-8 transform scale-90 sm:scale-100">
                   <OrientationMockup />
                 </div>
-                <h4 className="text-lg font-bold text-white mb-3">Pre-departure Briefing</h4>
-                <p className="text-sm text-gray-400 leading-relaxed">Sesi orientasi mendalam tentang budaya, sistem belajar, dan tips adaptasi di kota tujuan.</p>
+                <h4 className="text-[17px] sm:text-lg font-bold text-white mb-2 sm:mb-3">Pre-departure Briefing</h4>
+                <p className="text-[13px] sm:text-sm text-gray-400 leading-relaxed">Sesi orientasi mendalam tentang budaya, sistem belajar, dan tips adaptasi di kota tujuan.</p>
               </div>
 
-              <div className="bg-[#1C1C1C] border border-white/5 rounded-[20px] p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10">
-                <div className="flex-1 w-full flex items-center justify-center min-h-[180px] mb-8">
+              <div className="bg-[#1C1C1C] border border-white/5 rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#202020] hover:border-white/10 overflow-hidden">
+                <div className="flex-1 w-full flex items-center justify-center min-h-[140px] sm:min-h-[180px] mb-6 sm:mb-8 transform scale-90 sm:scale-100">
                   <CommunityMockup />
                 </div>
-                <h4 className="text-lg font-bold text-white mb-3">Jejaring Komunitas</h4>
-                <p className="text-sm text-gray-400 leading-relaxed">Terhubung dengan alumni dan senior Indonesia yang sudah lebih dulu berkuliah di kampus Anda.</p>
+                <h4 className="text-[17px] sm:text-lg font-bold text-white mb-2 sm:mb-3">Jejaring Komunitas</h4>
+                <p className="text-[13px] sm:text-sm text-gray-400 leading-relaxed">Terhubung dengan alumni dan senior Indonesia yang sudah lebih dulu berkuliah di kampus Anda.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Sub-section 3 */}
-        <div className="relative pl-8 md:pl-16 pb-8">
-          <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center w-8">
-            <div className="w-8 h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-xs font-bold leading-none shrink-0 ring-4 ring-[#121212] -mt-0.5">
+        <div className="relative pl-6 sm:pl-8 md:pl-16 pb-8">
+          <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center w-6 sm:w-8">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-[10px] sm:text-xs font-bold leading-none shrink-0 ring-2 sm:ring-4 ring-[#121212] -mt-0.5">
               03
             </div>
             <div className="w-px h-full bg-gradient-to-b from-gray-700/50 to-transparent my-2"></div>
@@ -338,19 +338,19 @@ export function WhyUs() {
               desc="Tim lokal kami akan menyambut dan memandu langkah-langkah pertama Anda agar merasa aman di lingkungan yang baru."
               icon={Globe}
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {[
                 { title: "Penjemputan Bandara", desc: "Penjemputan di bandara dan pengantaran langsung hingga ke depan gerbang asrama.", icon: Plane, color: "text-blue-400" },
                 { title: "Pengurusan Asrama", desc: "Membantu registrasi kamar, pembayaran deposit, dan penjelasan aturan asrama.", icon: Building, color: "text-purple-400" },
                 { title: "Pendaftaran Kampus", desc: "Mendampingi proses daftar ulang, tes kesehatan, dan pengurusan resident permit.", icon: UserCheck, color: "text-green-400" },
                 { title: "Kebutuhan Esensial", desc: "Membantu buka rekening bank lokal, beli SIM card, dan instal aplikasi wajib Tiongkok.", icon: Smartphone, color: "text-orange-400" }
               ].map((item, i) => (
-                <div key={i} className="bg-[#1C1C1C] border border-white/5 rounded-[20px] p-8 flex flex-col items-start transition-all duration-300 hover:bg-[#202020] hover:border-white/10 hover:-translate-y-1">
-                  <div className={`w-14 h-14 rounded-2xl bg-[#252525] border border-white/5 flex items-center justify-center mb-6 shadow-inner ${item.color}`}>
-                    <item.icon size={26} strokeWidth={1.5} />
+                <div key={i} className="bg-[#1C1C1C] border border-white/5 rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 flex flex-col items-start transition-all duration-300 hover:bg-[#202020] hover:border-white/10 hover:-translate-y-1">
+                  <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-[#252525] border border-white/5 flex items-center justify-center mb-4 sm:mb-6 shadow-inner ${item.color}`}>
+                    <item.icon className="w-5 h-5 sm:w-[26px] sm:h-[26px]" strokeWidth={1.5} />
                   </div>
-                  <h4 className="text-lg font-bold text-white mb-3">{item.title}</h4>
-                  <p className="text-sm text-gray-400 leading-relaxed">{item.desc}</p>
+                  <h4 className="text-[17px] sm:text-lg font-bold text-white mb-2 sm:mb-3">{item.title}</h4>
+                  <p className="text-[13px] sm:text-sm text-gray-400 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>

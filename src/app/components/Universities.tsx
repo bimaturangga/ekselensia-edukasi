@@ -39,35 +39,35 @@ const ROW3 = [...LOGOS3, ...LOGOS3, ...LOGOS3, ...LOGOS3, ...LOGOS3, ...LOGOS3, 
 
 export function Universities() {
   return (
-    <section className="bg-gray-50 py-24 border-b border-gray-100 overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative z-20">
+    <section className="bg-gray-50 py-16 lg:py-24 border-b border-gray-100 overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 lg:mb-16 relative z-20">
         <div className="text-center max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white border border-gray-200 text-gray-600 text-xs font-medium mb-6 shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white border border-gray-200 text-gray-600 text-[11px] sm:text-xs font-medium mb-4 sm:mb-6 shadow-sm">
             <Building2 size={14} />
             Mitra Global
           </div>
           <BlurRevealText
             text="Mitra Universitas Kami"
-            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight bg-clip-text text-transparent"
+            className="text-[28px] leading-tight sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 tracking-tight bg-clip-text text-transparent"
             style={{
               fontFamily: 'Funnel Display, sans-serif',
               backgroundImage: "linear-gradient(174.955deg, rgb(30, 30, 30) 11.53%, rgba(30, 30, 30, 0.6) 109.53%)"
             }}
           />
-          <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          <p className="text-[14px] sm:text-lg text-gray-600 leading-relaxed mb-4 sm:mb-6">
             Kami bekerja sama dengan universitas-universitas terbaik dan paling bergengsi di seluruh Tiongkok.
           </p>
         </div>
       </div>
 
-      <div className="relative w-full flex flex-col gap-10 lg:gap-14 overflow-hidden">
+      <div className="relative w-full flex flex-col gap-6 sm:gap-10 lg:gap-14 overflow-hidden">
         {/* Global edge gradients for fading effect */}
-        <div className="absolute inset-y-0 left-0 w-24 md:w-48 bg-gradient-to-r from-gray-50 to-transparent z-20 pointer-events-none"></div>
-        <div className="absolute inset-y-0 right-0 w-24 md:w-48 bg-gradient-to-l from-gray-50 to-transparent z-20 pointer-events-none"></div>
+        <div className="absolute inset-y-0 left-0 w-16 sm:w-24 md:w-48 bg-gradient-to-r from-gray-50 to-transparent z-20 pointer-events-none"></div>
+        <div className="absolute inset-y-0 right-0 w-16 sm:w-24 md:w-48 bg-gradient-to-l from-gray-50 to-transparent z-20 pointer-events-none"></div>
 
         {/* Top Row: Right to Left */}
         <div className="flex items-center w-max animate-marquee" style={{ animationDuration: '40s' }}>
-          <div className="flex gap-16 md:gap-24 pr-16 md:pr-24 items-center">
+          <div className="flex gap-12 sm:gap-16 md:gap-24 pr-12 sm:pr-16 md:pr-24 items-center">
             {ROW1.map((src, i) => (
               <div key={`row1-${i}`} className="flex-shrink-0 flex items-center justify-center">
                 <UnivLogo src={src} alt="University Logo" />
@@ -78,7 +78,7 @@ export function Universities() {
 
         {/* Middle Row: Left to Right */}
         <div className="flex items-center w-max animate-marquee" style={{ animationDirection: 'reverse', animationDuration: '45s' }}>
-          <div className="flex gap-16 md:gap-24 pr-16 md:pr-24 items-center">
+          <div className="flex gap-12 sm:gap-16 md:gap-24 pr-12 sm:pr-16 md:pr-24 items-center">
             {ROW2.map((src, i) => (
               <div key={`row2-${i}`} className="flex-shrink-0 flex items-center justify-center">
                 <UnivLogo src={src} alt="University Logo" />
@@ -89,7 +89,7 @@ export function Universities() {
 
         {/* Bottom Row: Right to Left */}
         <div className="flex items-center w-max animate-marquee" style={{ animationDuration: '35s' }}>
-          <div className="flex gap-16 md:gap-24 pr-16 md:pr-24 items-center">
+          <div className="flex gap-12 sm:gap-16 md:gap-24 pr-12 sm:pr-16 md:pr-24 items-center">
             {ROW3.map((src, i) => (
               <div key={`row3-${i}`} className="flex-shrink-0 flex items-center justify-center">
                 <UnivLogo src={src} alt="University Logo" />

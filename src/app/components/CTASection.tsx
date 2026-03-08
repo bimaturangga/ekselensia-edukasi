@@ -4,11 +4,11 @@ import { BlurRevealText } from './ui/BlurRevealText';
 
 export function CTASection() {
   return (
-    <section className="bg-white py-16 sm:py-24">
+    <section className="bg-white py-10 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* The CTA Container */}
-        <div className="relative w-full rounded-[24px] overflow-hidden shadow-2xl flex flex-col items-center text-center px-6 py-16 sm:px-12 sm:py-24 border border-red-800/60 bg-[#240606]">
+        <div className="relative w-full rounded-[24px] overflow-hidden shadow-2xl flex flex-col items-center text-center px-5 py-12 sm:px-12 sm:py-24 border border-red-800/60 bg-[#240606]">
 
           {/* Top radial gradient light source */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-[1200px] bg-[radial-gradient(ellipse_at_top,rgba(235,50,50,0.5),transparent_75%)] pointer-events-none z-0"></div>
@@ -63,26 +63,26 @@ export function CTASection() {
 
           {/* Typography Content */}
           <div className="relative z-10 w-full max-w-2xl flex flex-col items-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/10 border border-white/20 text-white text-xs font-medium mb-6 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/10 border border-white/20 text-white text-[11px] sm:text-xs font-medium mb-4 sm:mb-6 backdrop-blur-sm">
               <Phone size={14} />
               Hubungi Kami
             </div>
             <BlurRevealText
               text="Siap Memulai Perjalanan<br className='hidden sm:block' /> Akademis Anda?"
-              className="text-3xl md:text-4xl font-bold mb-4 tracking-tight text-center bg-clip-text text-transparent"
+              className="text-[26px] leading-[32px] sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 tracking-tight text-center bg-clip-text text-transparent"
               style={{
                 fontFamily: 'Funnel Display, sans-serif',
                 backgroundImage: 'linear-gradient(174.955deg, rgb(255, 255, 255) 11.53%, rgba(255, 255, 255, 0.3) 109.53%)'
               }}
             />
-            <p className="text-base sm:text-lg text-white/80 leading-relaxed mb-8 max-w-xl text-center">
+            <p className="text-[14px] sm:text-lg text-white/80 leading-relaxed mb-6 sm:mb-8 max-w-xl text-center">
               Jangan tunda lagi impian Anda. Hubungi konsultan kami hari ini untuk konsultasi gratis mengenai peluang kuliah dan beasiswa di Tiongkok. Bangun masa depan Anda bersama ahlinya.
             </p>
 
             {/* Button */}
             <a
               href="https://wa.me/1234567890"
-              className="bg-white text-[#11023b] px-6 py-3 rounded-xl font-medium text-[15px] hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 shadow-lg w-auto"
+              className="bg-white text-[#11023b] px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-medium text-[13px] sm:text-[15px] hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 shadow-lg w-auto"
             >
               Hubungi Kami Sekarang
             </a>

@@ -68,17 +68,17 @@ const COL_3 = [
 
 function TestimonialCard({ item }: { item: any }) {
   return (
-    <div className="border border-gray-200/60 rounded-3xl p-6 bg-white/50 backdrop-blur-sm flex flex-col gap-5 mb-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
-      <div className="flex items-center gap-4">
-        <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-gray-100">
+    <div className="border border-gray-200/60 rounded-[20px] sm:rounded-3xl p-5 sm:p-6 bg-white/50 backdrop-blur-sm flex flex-col gap-4 sm:gap-5 mb-4 sm:mb-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
+      <div className="flex items-center gap-3 sm:gap-4">
+        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden shrink-0 border border-gray-100">
           <ImageWithFallback src={item.image} alt={item.name} className="w-full h-full object-cover" />
         </div>
         <div className="flex flex-col">
-          <p className="text-[#1f2937] font-medium text-sm">{item.name}</p>
-          <p className="text-[#6b7280] text-sm">{item.role}</p>
+          <p className="text-[#1f2937] font-medium text-[13px] sm:text-sm">{item.name}</p>
+          <p className="text-[#6b7280] text-[12px] sm:text-sm">{item.role}</p>
         </div>
       </div>
-      <p className="text-[#4b5563] text-[14px] leading-[22px] font-normal">
+      <p className="text-[#4b5563] text-[13px] sm:text-[14px] leading-relaxed sm:leading-[22px] font-normal">
         {item.text}
       </p>
     </div>
@@ -87,35 +87,35 @@ function TestimonialCard({ item }: { item: any }) {
 
 export function Testimonials() {
   return (
-    <section className="bg-white py-24 border-b border-gray-100 overflow-hidden relative">
+    <section className="bg-white py-16 lg:py-24 border-b border-gray-100 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="text-center mb-16 max-w-2xl mx-auto relative z-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#f5f5f5] border border-gray-200 text-gray-600 text-xs font-medium mb-6">
+        <div className="text-center mb-10 sm:mb-16 max-w-2xl mx-auto relative z-20">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#f5f5f5] border border-gray-200 text-gray-600 text-[11px] sm:text-xs font-medium mb-4 sm:mb-6">
             <MessageSquare size={14} />
             Testimoni Siswa
           </div>
           <BlurRevealText
             text="Dipercaya oleh Ratusan Pelajar"
-            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight bg-clip-text text-transparent"
+            className="text-[28px] sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 tracking-tight bg-clip-text text-transparent"
             style={{
               fontFamily: 'Funnel Display, sans-serif',
               backgroundImage: "linear-gradient(174.955deg, rgb(30, 30, 30) 11.53%, rgba(30, 30, 30, 0.6) 109.53%)"
             }}
           />
-          <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          <p className="text-[14px] sm:text-lg text-gray-600 leading-relaxed mb-4 sm:mb-6">
             Mendengar langsung pengalaman mereka yang telah berhasil mewujudkan mimpi kuliah di Tiongkok.
           </p>
         </div>
 
         {/* Masonry / Carousel Container */}
-        <div className="relative w-full h-[600px] overflow-hidden -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div className="relative w-full h-[450px] sm:h-[600px] overflow-hidden -mx-4 px-4 sm:mx-0 sm:px-0">
 
           {/* Top/Bottom Gradient Fades */}
-          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute top-0 left-0 right-0 h-24 sm:h-32 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-32 sm:h-40 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-full relative z-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 h-full relative z-0">
 
             {/* Column 1 - All items on Mobile, only Col 1 on Desktop */}
             <div className="flex flex-col relative h-full overflow-hidden">

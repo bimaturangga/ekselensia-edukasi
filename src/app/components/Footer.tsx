@@ -33,11 +33,11 @@ function Heading({ text }: { text: string }) {
 
 export function Footer() {
   return (
-    <footer id="kontak" className="bg-[#101010] relative overflow-hidden flex justify-center pt-16 lg:pt-[48px] mx-5 rounded-[20px] mb-5">
+    <footer id="kontak" className="bg-[#101010] relative overflow-hidden flex justify-center pt-12 lg:pt-[48px] mx-3 sm:mx-5 rounded-[16px] sm:rounded-[20px] mb-3 sm:mb-5">
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col relative">
 
         {/* Top Content Area */}
-        <div className="flex flex-col lg:flex-row pb-16 lg:pb-24 lg:pt-12 relative gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row pb-12 lg:pb-24 lg:pt-12 relative gap-8 lg:gap-16">
 
           {/* Logo Section */}
           <div className="lg:w-[280px] flex-shrink-0 flex flex-col items-start pt-2">

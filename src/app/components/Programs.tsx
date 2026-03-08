@@ -223,7 +223,7 @@ const PROGRAMS: { mockup: React.FC; title: string; desc: string; href?: string }
 
 export function Programs() {
   return (
-    <section id="program" className="bg-white py-24 border-b border-gray-100">
+    <section id="program" className="bg-white py-16 lg:py-24 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <SubHeader
@@ -233,34 +233,34 @@ export function Programs() {
           icon={BookOpen}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {PROGRAMS.map((program, index) => {
             const MockupComponent = program.mockup;
             const CardContent = (
               <div
-                className="bg-[#fafafa] rounded-[24px] h-[450px] relative overflow-hidden flex flex-col group transition-all duration-300 border border-gray-100 hover:border-gray-200 hover:shadow-lg w-full cursor-pointer"
+                className="bg-[#fafafa] rounded-[20px] sm:rounded-[24px] h-[380px] sm:h-[450px] relative overflow-hidden flex flex-col group transition-all duration-300 border border-gray-100 hover:border-gray-200 hover:shadow-lg w-full cursor-pointer"
               >
                 {/* Top Text Content */}
-                <div className="pt-10 px-8 flex flex-col items-center text-center z-10 w-full">
+                <div className="pt-6 sm:pt-10 px-5 sm:px-8 flex flex-col items-center text-center z-10 w-full">
                   <BlurRevealText
                     text={program.title}
                     as="h3"
-                    className="text-xl font-bold text-gray-900 mb-3 tracking-tight"
+                    className="text-[17px] sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 tracking-tight"
                     style={{
                       fontFamily: 'Funnel Display, sans-serif'
                     }}
                   />
-                  <p className="text-[14px] text-gray-500 leading-relaxed max-w-[280px]">
+                  <p className="text-[13px] sm:text-[14px] text-gray-500 leading-relaxed max-w-[280px]">
                     {program.desc}
                   </p>
                 </div>
 
                 {/* Bottom Mockup Container */}
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] h-[220px]">
-                  <div className="w-full h-full rounded-t-[16px] overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.05)] bg-[#fdfdfd] border border-gray-200/60 border-b-0 transform transition-transform duration-500 group-hover:-translate-y-2 flex items-center justify-center">
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] sm:w-[85%] h-[180px] sm:h-[220px]">
+                  <div className="w-full h-full rounded-t-[14px] sm:rounded-t-[16px] overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.05)] bg-[#fdfdfd] border border-gray-200/60 border-b-0 transform transition-transform duration-500 group-hover:-translate-y-2 flex items-center justify-center">
                     {/* Abstract background gradient inside mockup box */}
                     <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white opacity-50"></div>
-                    <div className="relative z-10 w-full h-full">
+                    <div className="relative z-10 w-full h-full transform scale-90 sm:scale-100 origin-bottom">
                       <MockupComponent />
                     </div>
                   </div>
