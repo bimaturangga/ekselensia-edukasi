@@ -111,7 +111,7 @@ const AppContent = () => {
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-white text-black font-sans selection:bg-[#7c1318] selection:text-white">
+    <div className="min-h-screen bg-white text-black font-sans selection:bg-[#7c1318] selection:text-white overflow-x-hidden w-full relative">
       <style>{`
         @keyframes marquee {
           from { transform: translateX(0); }

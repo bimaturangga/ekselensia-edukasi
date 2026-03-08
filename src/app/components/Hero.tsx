@@ -103,14 +103,14 @@ export function Hero() {
           <p className="text-lg text-gray-600 leading-relaxed max-w-lg mb-6">
             Ekselensia membantu Anda mempersiapkan diri dan memastikan langkah sukses untuk menempuh pendidikan terbaik di universitas top Tiongkok.
           </p>
-          <div className="flex gap-4">
-            <RedButton as="a" href="https://wa.me/1234567890">
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <RedButton as="a" href="https://wa.me/1234567890" className="w-full sm:w-auto flex justify-center">
               Mulai Konsultasi
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </RedButton>
             <a
               href="#program"
-              className="bg-white text-black border-2 border-gray-200 px-8 py-4 rounded-[10px] font-medium text-[18px] hover:border-gray-300 hover:bg-gray-50 transition-all flex items-center"
+              className="bg-white text-black border-2 border-gray-200 px-8 py-4 rounded-[10px] font-medium text-[18px] hover:border-gray-300 hover:bg-gray-50 transition-all flex items-center justify-center w-full sm:w-auto"
             >
               Lihat Program
             </a>
