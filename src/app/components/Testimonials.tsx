@@ -68,12 +68,12 @@ const COL_3 = [
 
 function TestimonialCard({ item }: { item: any }) {
   return (
-    <div className="border border-gray-200/60 rounded-[20px] sm:rounded-3xl p-5 sm:p-6 bg-white/50 backdrop-blur-sm flex flex-col gap-4 sm:gap-5 mb-4 sm:mb-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
-      <div className="flex items-center gap-3 sm:gap-4">
+    <div className="border border-gray-200/60 rounded-[20px] sm:rounded-3xl p-5 sm:p-6 bg-white/50 backdrop-blur-sm flex flex-col items-center text-center sm:items-start sm:text-left gap-4 sm:gap-5 mb-4 sm:mb-6 shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
+      <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
         <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden shrink-0 border border-gray-100">
           <ImageWithFallback src={item.image} alt={item.name} className="w-full h-full object-cover" />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center sm:items-start">
           <p className="text-[#1f2937] font-medium text-[13px] sm:text-sm">{item.name}</p>
           <p className="text-[#6b7280] text-[12px] sm:text-sm">{item.role}</p>
         </div>

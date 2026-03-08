@@ -137,8 +137,14 @@
   */
 
   html {
-    font-size: var(--font-size);
+    font-size: 14.5px;
     scroll-behavior: smooth;
+  }
+
+  @media (min-width: 640px) {
+    html {
+      font-size: var(--font-size);
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {

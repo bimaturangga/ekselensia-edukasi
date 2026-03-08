@@ -5,7 +5,7 @@ import { RedButton } from './ui/RedButton';
 import { BlurRevealText } from './ui/BlurRevealText';
 
 const SubHeader = ({ tag, title, desc, icon: Icon }: any) => (
-  <div className="max-w-3xl mb-6 sm:mb-8">
+  <div className="max-w-3xl mb-6 sm:mb-8 flex flex-col items-center text-center sm:items-start sm:text-left">
     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-[#252525] border border-white/10 text-gray-300 text-[11px] sm:text-xs font-medium mb-4 sm:mb-6">
       <Icon size={14} />
       {tag}
@@ -222,9 +222,9 @@ export function WhyUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Sub-section 1 */}
-        <div className="relative pl-6 sm:pl-8 md:pl-16 pb-16 sm:pb-32">
-          <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center w-6 sm:w-8">
-            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-[10px] sm:text-xs font-bold leading-none shrink-0 ring-2 sm:ring-4 ring-[#121212] -mt-0.5">
+        <div className="relative pl-0 sm:pl-8 md:pl-16 pb-16 sm:pb-32">
+          <div className="absolute left-0 top-0 bottom-0 hidden sm:flex flex-col items-center w-8">
+            <div className="w-8 h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-xs font-bold leading-none shrink-0 ring-4 ring-[#121212] -mt-0.5">
               01
             </div>
             <div className="w-px flex-1 bg-gray-700/50 my-2"></div>
@@ -278,9 +278,9 @@ export function WhyUs() {
         </div>
 
         {/* Sub-section 2 */}
-        <div className="relative pl-6 sm:pl-8 md:pl-16 pb-16 sm:pb-32">
-          <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center w-6 sm:w-8">
-            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-[10px] sm:text-xs font-bold leading-none shrink-0 ring-2 sm:ring-4 ring-[#121212] -mt-0.5">
+        <div className="relative pl-0 sm:pl-8 md:pl-16 pb-16 sm:pb-32">
+          <div className="absolute left-0 top-0 bottom-0 hidden sm:flex flex-col items-center w-8">
+            <div className="w-8 h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-xs font-bold leading-none shrink-0 ring-4 ring-[#121212] -mt-0.5">
               02
             </div>
             <div className="w-px flex-1 bg-gray-700/50 my-2"></div>
@@ -323,9 +323,9 @@ export function WhyUs() {
         </div>
 
         {/* Sub-section 3 */}
-        <div className="relative pl-6 sm:pl-8 md:pl-16 pb-8">
-          <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center w-6 sm:w-8">
-            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-[10px] sm:text-xs font-bold leading-none shrink-0 ring-2 sm:ring-4 ring-[#121212] -mt-0.5">
+        <div className="relative pl-0 sm:pl-8 md:pl-16 pb-8">
+          <div className="absolute left-0 top-0 bottom-0 hidden sm:flex flex-col items-center w-8">
+            <div className="w-8 h-8 rounded-full bg-[#1C1C1C] border border-gray-600 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(0,0,0,0.5)] text-gray-300 text-xs font-bold leading-none shrink-0 ring-4 ring-[#121212] -mt-0.5">
               03
             </div>
             <div className="w-px h-full bg-gradient-to-b from-gray-700/50 to-transparent my-2"></div>
